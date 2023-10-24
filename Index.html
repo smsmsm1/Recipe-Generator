@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meal Plan Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="form">
+    <h1>Welcome to the Meal Plan Generator!🍍</h1>
+    <p id="slogan">Helping you make healthy choices easily</p>
+    <form>
+      <label for="firstName">First name:</label><br />
+      <input type="text" id="firstName" name="firstName" placeholder="Enter first name..." onchange="onChange(this.value)" /><br />
+      <br />
+      <label for="lname">Which meal plan would you like? (Select one only)</label><br />
+      <input type="checkbox" id="vegan" name="vegan" value="vegan" />
+      <label for="vegan"> Vegan</label><br />
+      <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian" />
+      <label for="vegetarian">Vegetarian</label><br />
+      <input type="checkbox" id="pescatarian" name="pescatarian" value="pescatarian" />
+      <label for="pescatarian"> Pescatarian</label> <br />
+      <br />
+      
+      <label>What is your daily calorie intake?</label><br />
+      <div class="calorie-input">
+        <input type="text" id="calorieInput" placeholder="Enter calories...">
+      </div>
+      <button class="submit-btn" type="submit" id="submit" value="submit" onclick="info()">
+        Submit
+      </button>
+    </form>
+  </div>
+  <br />
+
+  <div class="container hidden">
+    <h1>Meal Plan Generator</h1>
+    <div id="userInfo">
+    </div>
+
+    <div class="calorie-tracker-section">
+      <h2>Calorie Tracker</h2>
+
+      <ul id="calorieList"></ul>
+      <p id="sumOfCaloriesInMeal"></p>
+      <p id="total-calories"></p>
+    </div>
+    
+    <div class="recipe-section">
+      <button id="generateRecipeButton">Generate Recipe</button>
+      <div id="recipeContainer"></div>
+    </div>
+    
+  </div>
+<div class="video-tut container hidden">
+  <div class="row text-center">
+    <h3>Want a Video Tutorial?</h3>
+    <h5>Get a random meal by clicking below</h5>
+    <button class="submit-btn" id="get_meal">Get Meal 🍔</button>
+  </div>
+  <div id="meal" class="row meal"></div>
+</div>
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>
