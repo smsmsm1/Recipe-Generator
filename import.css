@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body {
+  background-color: #fdfdc0c4;
+  font: 15px Verdana;
+align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(203, 247, 242);
+}
+
+.video-tut {
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
+#form {
+  max-width: 600px;
+  margin: 90px auto;
+  padding: 20px;
+  background-color: rgb(203, 247, 242);
+ 
+  box-shadow: 0 0 5px 5px rgba(133, 255, 149, 0.3);
+  text-align: center;
+}
+
+#slogan {
+  font: 18px Verdana;
+  text-align: center;
+}
+
+#firstName {
+  font:15px Verdana;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  margin: 30px auto;
+  background-color: rgb(44, 255, 230);
+  box-shadow: 2px 3px black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.submit-btn:hover,
+#generateRecipeButton:hover {
+  background-color: rgb(33, 172, 154);
+  color: white;
+  box-shadow: 2px 3px rgb(44, 255, 230);
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.recipe-section {
+  margin-bottom: 40px;
+}
+
+#generateRecipeButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(44, 255, 230);
+  box-shadow: 2px 3px black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.calorie-tracker-section {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.calorie-input input[type="text"] {
+  font: small-caps 15px Verdana;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.calorie-input button {
+  padding: 10px 20px;
+  background-color: rgb(44, 255, 230);
+  box-shadow: 2px 3px black;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.calorie-input button:hover {
+  background-color: #555;
+}
+
+#calorieList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#totalCalories {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#userInfo {
+  font:15px/5px Verdana;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+
+}
+
+#get_meal{
+  margin-top: 0px;
+}
